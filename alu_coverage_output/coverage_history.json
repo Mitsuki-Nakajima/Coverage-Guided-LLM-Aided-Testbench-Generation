@@ -1,0 +1,34 @@
+[
+  {
+    "iteration": 0,
+    "patterns": 16,
+    "line": 100,
+    "toggle_0_to_1": 100,
+    "toggle_1_to_0": 97,
+    "logic": 63
+  },
+  {
+    "iteration": 1,
+    "patterns": 28,
+    "line": 100,
+    "toggle_0_to_1": 100,
+    "toggle_1_to_0": 100,
+    "logic": 71
+  },
+  {
+    "iteration": 2,
+    "patterns": 40,
+    "line": 100,
+    "toggle_0_to_1": 100,
+    "toggle_1_to_0": 100,
+    "logic": 90
+  },
+  {
+    "iteration": 3,
+    "patterns": 49,
+    "line": 100,
+    "toggle_0_to_1": 100,
+    "toggle_1_to_0": 100,
+    "logic": 95
+  }
+]

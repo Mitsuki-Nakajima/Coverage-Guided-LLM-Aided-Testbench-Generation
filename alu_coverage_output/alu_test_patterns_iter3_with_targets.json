@@ -1,0 +1,58 @@
+{
+  "patterns": [
+    {
+      "a": 1,
+      "b": 128,
+      "op": 0,
+      "target": "ADD: a[7]=0,b[7]=1 operand-MSB combo 01, no carry"
+    },
+    {
+      "a": 100,
+      "b": 50,
+      "op": 0,
+      "target": "ADD: no carry with y[7]=1 (carry=0, y7=1)"
+    },
+    {
+      "a": 200,
+      "b": 100,
+      "op": 0,
+      "target": "ADD: carry=1 with y[7]=0 (300 wraps to 44)"
+    },
+    {
+      "a": 100,
+      "b": 50,
+      "op": 1,
+      "target": "SUB: no borrow, positive result, 00 combination"
+    },
+    {
+      "a": 77,
+      "b": 77,
+      "op": 1,
+      "target": "SUB: zero result, a==b, 00 combination"
+    },
+    {
+      "a": 200,
+      "b": 10,
+      "op": 1,
+      "target": "SUB overflow term (y[7]^a[7]): y7=1 and a7=1 (190 from 200)"
+    },
+    {
+      "a": 0,
+      "b": 255,
+      "op": 4,
+      "target": "XOR: a bit=0, b bit=1 combination 01"
+    },
+    {
+      "a": 127,
+      "b": 7,
+      "op": 8,
+      "target": "SRA: positive a shifted by 7 gives 0, expression state E=0"
+    },
+    {
+      "a": 0,
+      "b": 3,
+      "op": 8,
+      "target": "SRA: zero input gives zero result, E=0"
+    }
+  ]
+}
